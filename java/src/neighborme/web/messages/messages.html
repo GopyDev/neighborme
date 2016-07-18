@@ -1,0 +1,27 @@
+<head css="bootstrap.css messages.css" js="jquery.js neighborme.js">
+
+<div class="container">
+  <import html="header.html">
+    <h2>Messages</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="threads">
+          <div loop="thread in threads" class="thread" data-requestid="{thread.request.id}" data-userid="{thread.user.id}">
+            <img src="{thread.user.picUrl}">
+            <div class="name">{thread.user.firstName} {thread.user.lastName} 
+              <span if="!thread.read" class="label label-info unread">Unread Message!</span>
+            </div>
+            <div>{thread.request.title}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 msg-container">
+        <div class="messages">
+        </div>
+        <textarea class="form-control reply" placeholder="Write a reply..." rows="4"></textarea>
+        <button class="btn btn-primary send">Send</button>
+      </div>
+    </div>
+</div>
+
+<import js="messages.js">

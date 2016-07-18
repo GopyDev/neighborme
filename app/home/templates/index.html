@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Sun Jan 31 2016 03:29:06 GMT+0000 (UTC) -->
+<html data-wf-site="5670866f0990be6a268192a2" data-wf-page="5671ac8673df15e96482aed6">
+<head>
+  <meta charset="utf-8">
+  <title>NeighborMe - Share your skills &amp; talents with other women nearby</title>
+  <meta name="description" content="NeighborMe is a platform created to provide a safe and easy way for women to both ask for help and to share their skills with others nearby.">
+  <meta property="og:title" content="NeighborMe - Share your skills &amp; talents with other women nearby">
+  <meta property="og:description" content="We provide an easy way for women to ask for and offer help.">
+  <meta property="og:image" content="https://daks2k3a4ib2z.cloudfront.net/5670866f0990be6a268192a2/56733cb86184f8ac5c06b9e3_Screen%20Shot%202015-12-17%20at%2012.35.27%20PM.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/normalize.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/webflow.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/neighborme-c524b3.webflow.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Varela Round:400"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/webflow/Logo.png') }}">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-67366645-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-67366645-1', 'auto');
+    ga('send', 'pageview');
+  //<!-- Facebook Pixel Code -->
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '259351940930233');
+  fbq('track', "PageView");
+  </script>
+  //
+  <!-- End Facebook Pixel Code -->
+</head>
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navbar">
+    <div class="w-container">
+      <a href="#" class="w-nav-brand"><img width="184" src="{{ url_for('static', filename='img/webflow/Logo Header.png') }}" class="logo">
+      </a>
+      <nav role="navigation" class="w-nav-menu nav-menu"><a href="#home" class="w-nav-link nav-link">Home</a><a href="#services" class="w-nav-link nav-link">How it works</a><a href="#examples" class="w-nav-link nav-link">Examples</a><a href="#about" class="w-nav-link nav-link">About</a><a href="#contact" class="w-nav-link nav-link">Contact</a>
+      </nav>
+      <div class="w-nav-button menu-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section top-nav-section">
+    <div class="w-container"><img width="248" src="{{ url_for('static', filename='img/webflow/NeighborMe_White1.png') }}" class="top-nav-logo">
+      <div class="w-row w-hidden-small w-hidden-tiny top-nav-links">
+        <div class="w-col w-col-2 top-nav-link-column left"><a href="#home" class="nav-link top-nav">Home</a>
+        </div>
+        <div class="w-col w-col-2 top-nav-link-column"><a href="#How-it-works" class="nav-link top-nav">how it works</a>
+        </div>
+        <div class="w-col w-col-2 top-nav-link-column"><a href="#examples" class="nav-link top-nav">Examples</a>
+        </div>
+        <div class="w-col w-col-2 top-nav-link-column"><a href="#about" class="nav-link top-nav">About</a>
+        </div>
+        <div class="w-col w-col-2 top-nav-link-column"><a href="#trust-safety" class="nav-link top-nav">Trust &amp; Safety</a>
+        </div>
+        <div class="w-col w-col-2 top-nav-link-column right"><a href="#contact" class="nav-link top-nav">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="home" class="w-section hero-section">
+    <div class="w-container">
+      <h1 class="hero-heading">SHARE YOUR SKILLS &amp; TALENTS WITH OTHER WOMEN NEARBY</h1>
+      <h1 class="hero-heading sub-heading">We provide an easy way for women to ask for and offer help.</h1><a href="/signup" class="button hero">SIGN UP / LOGIN</a>
+    </div>
+  </div>
+  <div id="How-it-works" class="w-section main-section top">
+    <div class="w-container">
+      <h1 id="services" class="text">how it works</h1>
+      <h3 class="subheadline">Let's bring the neighborhood back</h3>
+      <div class="w-row services-columns">
+        <div class="w-col w-col-3 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Fileedit.png') }}" class="services-icon">
+          <h2>1. post request</h2>
+          <p>Share what you need help with and how much you would like to offer</p>
+        </div>
+        <div class="w-col w-col-3 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Lovebubbles.png') }}" class="services-icon">
+          <h2>2. neighbors respond</h2>
+          <p>Neighbors message you based on the details and parameters you provide</p>
+        </div>
+        <div class="w-col w-col-3 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Femalefav.png') }}" class="services-icon">
+          <h2>3. get help</h2>
+          <p>Discuss, accept help, and pay – all seamlessly through NeighborMe</p>
+        </div>
+        <div class="w-col w-col-3 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Loverefresh.png') }}" class="services-icon">
+          <h2>4. pay it forward</h2>
+          <p>Review requests and share your skills with those in need nearby</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="examples" class="w-section main-section portfolio">
+    <h1>EXAMPLES</h1>
+    <h3 class="subheadline">We are very proud of our Super Women!</h3>
+    <div class="w-row client-row-top">
+      <div class="w-col w-col-3 client-column"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Business Services</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Get the help you need for your business - we have members with expertise in everything from marketing and accounting to law.</p><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Business Services</h1></div></a>
+      </div>
+      <div class="w-col w-col-3 client-column mailfox"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Photography</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Tap into our network of talented women for your next project, we're always looking to work on our craft.</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Photography</h1></div><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p></a>
+      </div>
+      <div class="w-col w-col-3 client-column lapfour"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Play Dates</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Make plans to get help from other parents nearby. We could all use an evening off once in a while.</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Play Dates</h1></div><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p></a>
+      </div>
+      <div class="w-col w-col-3 client-column trailerbot"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Cooking Tips</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Want to learn how to make a great lasagna? Bake a three layer cake? Help may only be a block away.</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Cooking</h1></div><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p></a>
+      </div>
+    </div>
+    <div class="w-row client-row-top">
+      <div class="w-col w-col-3 client-column frictionlabs"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Event Planning</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Need help planning your next party? Get help putting together the perfect event. From bridal showers to charity events, we've got you covered.</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Event Planning</h1></div><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p></a>
+      </div>
+      <div class="w-col w-col-3 client-column pindl"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Pet Care</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Looking for a last-minute pet-sitter nearby? Many of our members love dogs (or have kids that love dogs) and may be available to help out the next time you're in need.</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Pet Sitting</h1></div><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p></a>
+      </div>
+      <div class="w-col w-col-3 client-column universideals"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Arts &amp;&nbsp;Crafts</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">Have a creative project idea that you need help with?&nbsp;We have members that specialize in calligraphy, chalk art, building beautiful backdrops, fun teacher gifts, and much more!</p><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Arts &amp;&nbsp;Crafts</h1></div></a>
+      </div>
+      <div class="w-col w-col-3 client-column blanco-rojo"><a href="/examples" class="w-inline-block client-block link"><h1 class="w-hidden-medium w-hidden-small w-hidden-tiny client-nam">Flexible Work&nbsp;</h1><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description">We'll share flexible job opportunities for those looking to make a change or return to work after taking a career break.</p><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description link"><br>See more</p><div class="w-hidden-main title-block"><p class="w-hidden-medium w-hidden-small w-hidden-tiny customer-description learn-more">See More</p><h1 class="client-nam mobile">Flexible Work</h1></div></a>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="w-section main-section odd">
+    <div class="w-container">
+      <h1>about</h1>
+      <h3 class="subheader">We want to empower women to accomplish more, together.</h3>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <h2>Our Mission</h2>
+          <p class="paragraphs">Women today are busier than ever, yet often are hesitant to ask for help. As more and more people move away from their families, finding help isn't as easy as calling Grandma down the street.
+            <br>
+            <br>Meanwhile, many women have vast and varied skills that go underutilized everyday.&nbsp;NeighborMe provides a platform to find and/or offer time, skills, or resources to those in need.</p>
+        </div>
+        <div class="w-col w-col-6">
+          <h2>why only women?</h2>
+          <p class="paragraphs">We created NeighborMe to enable women to more easily harness the power of a nearby network. We believe carving out a female-focused space will help us build a stronger, safer community.&nbsp;
+            <br>
+            <br>With that said, we also want to support our male advocates, so we do not prevent anyone from joining on the basis of gender. We do ask all members to share how they identify in their profiles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="testimonials" class="w-section parallax-section">
+    <div class="w-container">
+      <div data-animation="slide" data-duration="500" data-infinite="1" data-nav-spacing="6" data-delay="6000" data-autoplay="1" class="w-slider w-clearfix testimonial-slider">
+        <div class="w-slider-mask">
+          <div class="w-slide">
+            <h1 class="testimonial">"It is so nice to be able to go to NeighborMe when I’m having doubts on a project or just need a second opinion. An hour of someone's professional expertise can really change everything."</h1>
+            <div class="w-row row">
+              <div class="w-col w-col-6 w-hidden-main w-hidden-medium"><img width="85" src="{{ url_for('static', filename='img/webflow/woman_Fotor-w800-h600 (1).png') }}" class="photo">
+              </div>
+              <div class="w-col w-col-6 w-hidden-main w-hidden-medium">
+                <h1 class="client-name">Sarah G.</h1>
+                <h1 class="client-company">Marina, San francisco</h1>
+              </div>
+            </div>
+            <div class="w-row w-hidden-small w-hidden-tiny testimonial-client">
+              <div class="w-col w-col-6 w-col-tiny-6 testimonial-column"><img width="100" src="{{ url_for('static', filename='img/webflow/woman_Fotor-w800-h600 (1).png') }}" class="photo">
+              </div>
+              <div class="w-col w-col-6 w-col-tiny-6">
+                <h1 class="client-name">Sarah G.</h1>
+                <h1 class="client-company">Marina, San francisco</h1>
+              </div>
+            </div>
+          </div>
+          <div class="w-slide">
+            <h1 class="testimonial">"It's such a waste to have specific skills but not have a way to apply them without working for someone else full-time. I just wish NeighborMe existed earlier!"</h1>
+            <div class="w-row testimonial-client">
+              <div class="w-col w-col-6 testimonial-column"><img width="94" src="{{ url_for('static', filename='img/webflow/Mommy_Fotor-w800-h600 (1).png') }}" class="client-image">
+              </div>
+              <div class="w-col w-col-6">
+                <h1 class="client-name">Eva L.</h1>
+                <h1 class="client-company">Pac Heights, San Francisco</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-slider-arrow-left invisible">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="w-slider-arrow-right w-clearfix">
+          <div class="w-icon-slider-right invisible"></div>
+        </div>
+        <div class="w-slider-nav w-round slidenav"></div>
+      </div>
+    </div>
+  </div>
+  <div id="trust-safety" class="w-section main-section top trust">
+    <div class="w-container">
+      <h1 id="services">Trust &amp;&nbsp;Safety</h1>
+      <h3 class="subheadline">We make it easy to get to know your Neighbors</h3>
+      <div class="w-row services-columns">
+        <div class="w-col w-col-4 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Femaleprofile.png') }}" class="services-icon">
+          <h2>IDentity&nbsp;Verification</h2>
+          <p>We verify all NeighborMe member identities four different ways</p>
+        </div>
+        <div class="w-col w-col-4 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Shinystar.png') }}" class="services-icon">
+          <h2>ratings &amp; reviews</h2>
+          <p>Get to know your fellow Neighbors through their profiles, ratings, and reviews</p>
+        </div>
+        <div class="w-col w-col-4 services-column"><img width="90" src="{{ url_for('static', filename='img/webflow/Comments.png') }}" class="services-icon">
+          <h2>Messaging</h2>
+          <p>Use our messaging platform to align expectations prior to meeting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section contact-heading">
+    <h1 class="contact-header-special">Contact US</h1>
+    <h3 class="subheadline">We're wherever you need us to be</h3>
+  </div>
+  <div id="contact" class="w-section main-section">
+    <div class="w-container contact-container">
+      <div class="w-row contact-row">
+        <div class="w-col w-col-6 contact-column">
+          <div class="w-form">
+            <form name="email-form" data-name="Email Form">
+              <h1 class="two-column-heading">Send a Message</h1>
+              <label for="name" class="field-label">Your Name:</label>
+              <input type="text" placeholder="First Last" name="name" data-name="Name" class="w-input text-area">
+              <label for="email" class="field-label">Email Address:</label>
+              <input type="email" placeholder="email@address.com" name="email" data-name="Email" required="required" class="w-input text-area">
+              <label class="field-label">Share your thoughts:</label>
+              <textarea class="w-input text-area"></textarea>
+              <input type="submit" value="Submit" data-wait="Please wait..." class="w-button submit-form">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6 w-clearfix contact-column right">
+          <h1 class="two-column-heading">get in touch</h1>
+          <ul class="w-list-unstyled">
+            <li class="w-clearfix"><img width="22" src="{{ url_for('static', filename='img/webflow/Inboxstamp.png') }}" class="contact-icon">
+              <h3 class="contact-header">info@neighborme.co</h3>
+            </li>
+            <li class="w-clearfix"><img width="22" src="{{ url_for('static', filename='img/webflow/Classicphone.png') }}" class="contact-icon"><a href="http://facebook.com/neighborme" target="_blank" class="w-clearfix w-inline-block"><h3 class="contact-header">(888) - 600- 3149</h3></a>
+            </li>
+            <li class="w-clearfix"><img width="26" src="{{ url_for('static', filename='img/webflow/Facebook.png') }}" class="contact-icon"><a href="http://facebook.com/neighborme" target="_blank" class="w-clearfix w-inline-block"><h3 class="contact-header">facebook.com/neighborme</h3></a>
+            </li>
+            <li class="w-clearfix"><img width="26" src="{{ url_for('static', filename='img/webflow/Twitter.png') }}" class="contact-icon"><a href="http://twitter.com/neighborme_co" target="_blank" class="w-clearfix w-inline-block"><h3 class="contact-header">@neighborme_co</h3></a>
+            </li>
+          </ul><img width="22" src="{{ url_for('static', filename='img/webflow/Optimplaces.png') }}" class="contact-icon">
+          <h3 class="contact-header">2055 Lombard Street<br>San Francisco, CA 94123</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section main-section footer">
+    <div class="w-container">
+      <div class="w-row bottom-row">
+        <div class="w-col w-col-3 w-clearfix"><img width="168" src="{{ url_for('static', filename='img/webflow/NeighborMe_White.png') }}" class="footer-logo">
+        </div>
+        <div class="w-col w-col-3 extracolumn"></div>
+        <div class="w-col w-col-3">
+          <div><span><a class="bottom-links" href="/privacy">Privacy Policy&nbsp;</a></span>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="bottom-links"><a href="/terms" class="bottom-links">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/vendor/webflow.js') }}"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

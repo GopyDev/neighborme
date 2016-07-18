@@ -1,0 +1,60 @@
+@import 'globals';
+
+.settings-nav {
+  background-color: $light-gray;
+  text-transform: uppercase;
+
+  .nav-pills > li > a {
+    color: white;
+    padding: 15px 0;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:focus,
+  .nav-pills > li.active > a:hover {
+    background-color: $light-gray;
+    color: black;
+  }
+}
+
+.panel-profile {
+  min-height: 600px;
+  margin: 100px auto;
+
+  .panel-body {
+    position: relative;
+    height: 100%;
+    padding: 80px;
+
+    .panel-body--header {
+      position: relative;
+    }
+  }
+}
+
+.user-profile--image {
+  margin-right: 40px;
+}
+
+.section {
+  margin-top: 40px;
+
+  h4.header {
+    color: $light-gray;
+  }
+}
+
+.skill-labels {
+  margin-bottom: 20px;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.edit-photo-button-container {
+  margin-top: 20px;
+  width: 240px;
+}

@@ -1,0 +1,82 @@
+.header {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.threads {
+  border: thin solid #c2c2c2;
+}
+
+.msg-container {
+  display: none;
+}
+
+.msg-container textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.messages {
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.thread {
+  padding: 8px;
+  margin: 0px;
+  border-top: thin solid #c2c2c2;
+  height: 80px;
+}
+
+.thread:hover {
+  background-color: #f8fbfe;
+  cursor: pointer;
+}
+
+.thread.selected {
+  background-color: #eafbfe;
+}
+
+.thread:first-child {
+  border-top: none;
+}
+
+.thread img {
+  border: solid 1px gray;
+  border-radius: 0px;
+  width: 64px;
+  float: left;
+  margin-right: 12px;
+}
+
+.thread .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.thread .label {
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.from {
+  color: #3b5998;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.message .body {
+  white-space: pre-wrap;
+}
+
+button.send {
+  margin-bottom: 20px;
+}

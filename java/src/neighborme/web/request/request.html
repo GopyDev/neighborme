@@ -1,0 +1,28 @@
+<head css="bootstrap.css request.css" js="jquery.js neighborme.js">
+
+<div class="container">
+  <import html="header.html">
+  <form>
+    <label>Title</label>
+    <input type="text" class="form-control title" placeholder="Example: 'Dogwalking'">
+    <label>Describe your request</label>
+    <textarea rows="6" class="form-control description" placeholder="Example: I'm going to be out of town this Wednesday. I'm looking for someone to walk Cookie, my 6-year-old collie, in the morning and evening. She's always very friendly!"></textarea>
+    <div class="form-group payment">
+      <label>Payment Amount</label>
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="number" class="amount form-control">
+      </div>
+    </div>
+    <div>
+      <label>What is the address?</label>
+      <p class="info"><i>Your address will be kept private until you approve of a helper.</i></p>
+      <input class="street form-control" type="text" placeholder="Street">
+      <input class="apartment form-control" type="text" placeholder="Apartment # (Optional)">
+      <input class="zip form-control" type="text" placeholder="Zip Code">
+    </div>
+    <button class="btn btn-primary">Submit Request</button>
+  </form>
+</div>
+
+<import js="request.js">

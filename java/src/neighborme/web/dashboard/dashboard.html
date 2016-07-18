@@ -1,0 +1,53 @@
+<head css="bootstrap.css dashboard.css" js="jquery.js neighborme.js">
+
+<div class="container">
+  <import html="header.html">
+  <div class="requests">
+    <h2>My Requests<a href="/requestHelp" class="btn btn-primary pull-right">Request Help</a></h2>
+    <table class="table table-striped table-hover" if="requests.hasData()">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr loop="request in requests">
+          <td>{request.title}</td>
+          <td>$ {request.amount}</td>
+          <td>{request.status}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div if="requests.isEmpty()">
+      <hr>
+      <p>You don't have any outstanding requests.</p>
+    </div>
+  </div>
+  <div>
+    <h2>My Offers to Help<a href="/browseRequests" class="btn btn-primary pull-right">Offer Help</a></h2>
+    <table class="table table-striped table-hover" if="offers.hasData()">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr loop="offer in offers">
+          <td>{offer.title}</td>
+          <td>$ {offer.amount}</td>
+          <td>Waiting for them to review your offer.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div if="offers.isEmpty()">
+      <hr>
+      <p>You have no outstanding offers to lend help. <a href="/browseRequests">Click here</a> to see different ways you could help out people near you!</p>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/payment/module.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div id="payment"></div>
+{% endblock %}

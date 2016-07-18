@@ -1,0 +1,43 @@
+<head css="bootstrap.css browse.css" js="jquery.js bootstrap.js neighborme.js">
+
+<div class="container">
+  <import html="header.html">
+  <h2>Requests for Help</h2>
+  <div>
+    <div class="request" loop="request in requests">
+      <div class="left">
+        <img src="{request.user.picUrl}">
+        <p class="name">{request.user.firstName}</p>
+      </div>
+      <div class="right">
+        <h3>{request.title}, ${request.amount}
+        <button if="!request.mine" class="btn btn-primary" data-requestId="{request.id}" data-userId="{request.user.id}" data-name="{request.user.firstName}">Offer to help</button></h3>
+        <p>{request.description}</p>
+      </div>
+    </div>
+  </div>
+  <div if="requests.isEmpty()">
+    <hr>
+    <p>It looks like nobody near you needs help right now!</p>
+  </div>
+</div>
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Send Message</h4>
+      </div>
+      <div class="modal-body">
+        <textarea rows="8" class="form-control"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary offer">Offer Help</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<import js="browse.js">

@@ -1,0 +1,95 @@
+@import 'globals';
+
+.signup-flow {
+  min-height: 800px;
+  background: url('/static/img/neighborhood_bg.png') no-repeat bottom;
+  background-size: 100% auto;
+}
+
+.panel-signup {
+  height: 600px;
+  margin-bottom: 100px;
+
+  .panel-body {
+    position: relative;
+    height: 100%;
+    padding: 40px;
+  }
+}
+
+.panel-bottom {
+  position: absolute;
+  width: calc(100% - 80px);
+  bottom: 0;
+  margin-bottom: 40px;
+
+  button {
+    text-transform: uppercase;
+  }
+
+  .panel-bottom--next, .panel-bottom--done {
+    float: right;
+    color: $neighborme-pink-highlight;
+  }
+
+  .panel-bottom--back {
+    color: $gray;
+  }
+}
+
+.row .row-progress {
+  padding: 0px 60px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.progress {
+  height: 10px;
+  background-color: $light-gray;
+
+  .progress-bar {
+    background-color: $neighborme-pink-highlight;
+  }
+}
+
+ul.progress-labels {
+  display: table;
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: table-cell;
+    text-align: center;
+  }
+}
+
+.row-progress h4 {
+  display: inline-block;
+  color: $gray;
+
+  &.progress-highlight {
+    color: $neighborme-pink-highlight;
+  }
+}
+
+.btn-margin {
+  margin: 5px;
+}
+
+.photos-text {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.photo-container {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.photo-container--img {
+  background: $light-gray url('/static/img/camera.png') no-repeat center;
+  height: 240px;
+  width: 240px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,114 @@
+@import 'globals';
+
+.hero {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-background {
+  background: linear-gradient($neighborme-pink, rgba(246, 247, 246, 0.85) 99%), url('/static/img/alamo_square.jpg') no-repeat bottom;
+  height: 400px;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-background {
+    background-size: 100% auto;
+  }
+}
+
+.photo-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.photo-text {
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.row-gray {
+  background-color: $background-gray;
+}
+
+.row-pink {
+  background-color: $neighborme-pink;
+}
+
+.row-sm-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.row-padding {
+  padding-top: 40px;
+  padding-bottom: 40px
+}
+
+/* SIGN UP MODAL */
+.modal-header-no-border {
+  border-bottom: none;
+}
+
+.modal-footer-no-border {
+  border-top: none;
+}
+
+.modal-body--header {
+  margin-bottom: 30px;
+}
+
+.modal-dialog {
+  width: 400px;
+}
+
+.modal-signup {
+  background: white url('/static/img/neighborhood_bg.png') no-repeat bottom;
+  background-size: 100% auto;
+}
+
+.modal-content {
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.modal-footer--text {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.signup-or-separator {
+  background: none;
+  position: relative;
+  text-align: center;
+  margin-bottom: 36px;
+
+  hr {
+    margin-top: -18px;
+    width: 90%;
+  }
+}
+
+.signup-or-separator--text {
+  background-color: white;
+  display: inline-block;
+  padding: 8px;
+}
+
+.forgot-password-link {
+  display: block;
+  color: $gray;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+/* END SIGN UP MODAL */

@@ -1,0 +1,12 @@
+{% extends "offerslayout.html" %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/chatroom/module.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sendbird/chatClient.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sendbird/util.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sendbird/jquery-1.11.3.min.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div id="chatroom"></div>
+{% endblock %}

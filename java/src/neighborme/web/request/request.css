@@ -1,0 +1,45 @@
+.title{
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.amount {
+  width: 150px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.payment {
+  margin-bottom: 30px;
+}
+
+.street {
+  margin-bottom: 10px;
+  width: 400px;
+  display: inline-block;
+}
+
+.apartment {
+  margin-bottom: 10px;
+  width: 180px;
+  display: inline-block;
+}
+
+.zip {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.error {
+  border: solid 2px red;
+}

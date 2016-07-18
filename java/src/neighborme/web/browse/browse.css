@@ -1,0 +1,38 @@
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.request img {
+  border: solid 1px gray;
+  border-radius: 100px;
+  width: 100px;
+}
+
+.name {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.request {
+  border: solid thin gray;
+  border-radius: 10px;
+  background-color: white;
+  min-height: 140px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.request .left {
+  float: left;
+  margin-right: 20px;
+}
+
+.request .right {
+  overflow: hidden;
+}
+
+.request button {
+  margin-left: 20px;
+}

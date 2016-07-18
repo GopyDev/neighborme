@@ -1,0 +1,249 @@
+@import 'globals';
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/static/fonts/AvenirLTStd-Book.woff');
+}
+
+@font-face {
+  font-family: 'Avenir Book Oblique';
+  src: url('/static/fonts/AvenirLTStd-BookOblique.woff');
+}
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('/static/fonts/AvenirLTStd-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url('/static/fonts/AvenirLTStd-Roman.woff');
+}
+
+h1 {
+  font-family: 'Avenir Roman';
+  font-size: 45px;
+}
+
+h2 {
+  font-family: 'Avenir Medium';
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Avenir Medium';
+  font-size: 25px;
+}
+
+h4 {
+  font-family: 'Avenir Medium';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'Avenir Book';
+  font-size: 16px;
+}
+
+.footer-text {
+  font-family: 'Avenir Medium';
+  font-size: 14px;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+.neighborme-nav {
+  margin-bottom: 0;
+}
+
+.space-top-8 {
+  margin-top: 40px;
+}
+
+.space-8 {
+  margin-bottom: 40px;
+}
+
+.space-top-2 {
+  margin-top: 10px;
+}
+
+.space-4 {
+  margin-bottom: 20px;
+}
+
+.padding-8 {
+  padding-bottom: 40px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn.btn-primary {
+  color: white;
+  background-color: $neighborme-pink-highlight;
+  border: none;
+}
+
+.btn-pink {
+  color: black;
+  background-color: $neighborme-pink;
+  border-color: $neighborme-pink-highlight;
+}
+
+.sub-nav {
+  border-top: solid 3px $background-gray;
+}
+
+.nav-pills > li > a {
+  border-radius: 0;
+  margin: 0 30px;
+}
+
+.sub-nav {
+  text-transform: uppercase;
+
+  .nav-pills > li > a:focus,
+  .nav-pills > li > a:hover {
+    background-color: white;
+    color: $neighborme-pink-highlight;
+    border-top: solid thick $neighborme-pink;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:focus,
+  .nav-pills > li.active > a:hover {
+    background-color: white;
+    color: $neighborme-pink-highlight;
+    border-top: solid thick $neighborme-pink-highlight;
+  }
+}
+
+.modal-body--header {
+  margin-bottom: 40px;
+}
+
+.modal-wide {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .modal-wide {
+    width: 600px;
+  }
+}
+
+.btn-join {
+  background-color: $btn-background-color;
+  color: white;
+  border-radius: 2px;
+  padding: 8px 32px 8px 32px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.text-gray {
+  color: $light-gray;
+}
+
+.browse-user-image {
+  border-radius: 50%;
+
+  &.image-small {
+    margin-right: 20px;
+  }
+}
+
+.browse-user-image {
+    width:60px;
+    height:60px;
+    margin:10px;
+    
+   /* &.image-small { */
+   /*   margin-right: 20px; */
+   /* } */
+}
+
+
+.request-small-image {
+  position: relative;
+  height: 100%;
+}
+
+.request-small-header {
+  position: relative;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.request-small-title {
+  font-size: 20px;
+}
+
+.panel-body-request-small {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row-gray {
+  background-color: $background-gray;
+}
+
+.row-houses-bg {
+  min-height: 800px;
+  background-color: $background-gray;
+  background: url('/static/img/neighborhood_bg.png') no-repeat bottom;
+  background-size: 100% auto;
+}
+
+.btn-green {
+    background-color: #E2FDCA;
+    border-color: #A7C889;
+}
+
+.btn-blk {
+    border-color: #909090;
+}
+
+.chat-buttons {
+    width: 350px;
+    margin: auto;
+}
+
+.chat-buttons button {
+    margin: 10px;
+}
+
+.chat-background-gray {
+    background: #F1F1F1;
+    padding: 1em;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.chat-background-pink {
+    background: $neighborme-pink;
+    padding: 1em;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.add-payment-btn {
+    margin-top:35px;
+}

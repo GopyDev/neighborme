@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/login/module.js') }}"></script>
+{% endblock %}
+
+{% block meta %}
+<meta id="_bootstrap_csrf_token" name="csrf_token" content="{{ login_form.csrf_token.current_token }}">
+{% endblock %}
+
+{% block body %}
+<div class="row row-padding row-gray row-signup-login">
+  <div class="container">
+    {% if error or login_form.errors %}
+    <div class="alert alert-danger fade in" role="alert">
+      <strong>{{error}}</strong>
+      {% if login_form.errors %}
+      <ul>
+        {% for field_name, field_errors in login_form.errors|dictsort if field_errors %}
+          {% for error in field_errors %}
+            <li>{{ login_form[field_name].label }}: {{ error }}</li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+      <div class="modal-content modal-signup">
+          <div id="login-pane-js"></div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
